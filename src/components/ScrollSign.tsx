@@ -1,6 +1,5 @@
 import React, { FC } from "react";
 import { BsChevronDoubleDown, BsChevronDoubleUp } from "react-icons/bs";
-import { motion } from "framer-motion";
 
 interface IProps {
   direction: "up" | "down";

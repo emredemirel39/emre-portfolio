@@ -2,18 +2,11 @@ import React, { FC, useState } from "react";
 
 interface IProps {
   handleMouseMove: Function;
+  navLinks: Array<String>;
 }
 
-const Header: FC<IProps> = ({ handleMouseMove }) => {
+const Header: FC<IProps> = ({ handleMouseMove, navLinks }) => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState<boolean>(false);
-
-  const navLinks: Array<String> = [
-    "Home",
-    "About",
-    "Skills",
-    "Projects",
-    "Contacts",
-  ];
 
   return (
     <header

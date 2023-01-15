@@ -11,7 +11,7 @@ const FullScreenSection: FC<IProps> = ({ children, id }) => {
     <section
       id={id}
       style={{ scrollBehavior: "smooth" }}
-      className="w-full h-screen pt-12 bg-black/50 snap-start backdrop-blur-lg"
+      className="w-screen h-screen pt-12 bg-black/50 snap-start backdrop-blur-lg"
     >
       <motion.div
         className="container mx-auto h-2/3 px-2 flex flex-col w-full justify-center items-center"

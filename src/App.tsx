@@ -1,8 +1,9 @@
 import React, { useRef, useState } from "react";
+import { navLinks, sliderContent } from "./constants";
 import FullScreenSection from "./components/FullScreenSection";
 import Header from "./components/Header";
 import ScrollSign from "./components/ScrollSign";
-import logo from "./logo.svg";
+import SkillsSlider from "./components/SkillsSlider";
 
 function App() {
   const [mousePosition, setMousePosition] = useState({ left: 0, top: 0 });
@@ -33,7 +34,7 @@ function App() {
       className="App overflow-y-scroll h-screen font-serif text-gray-200 w-full snap-start bg-auto bg-repeat"
       onMouseMove={(e) => handleMouseMove(e)}
     >
-      <Header handleMouseMove={handleMouseMove} />
+      <Header navLinks={navLinks} handleMouseMove={handleMouseMove} />
       <FullScreenSection id="1">
         <h1 className="mb-6 lg:mb-12 text-4xl md:text-6xl lg:text-7xl text-center">
           {" "}
@@ -55,6 +56,15 @@ function App() {
           iure porro fugiat distinctio deserunt ea! Doloribus dolorem voluptates
           saepe fugiat aliquid?
         </p>
+      </FullScreenSection>
+      <FullScreenSection id="3">
+        <h4 className="mb-12 text-6xl sm:text-7xl text-center border-b-2 border-blue-500 border-xl">
+          Projects
+        </h4>
+      </FullScreenSection>
+      <FullScreenSection id="4">
+        <h4 className="mb-12 text-6xl sm:text-7xl text-center">Skills</h4>
+        <SkillsSlider height={320} sliderContent={sliderContent} />
       </FullScreenSection>
     </div>
   );

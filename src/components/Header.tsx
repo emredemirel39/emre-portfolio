@@ -58,14 +58,14 @@ const Header: FC<IProps> = ({ handleMouseMove }) => {
       </div>
       {/* Mobile Menu */}
       <div
-        className={`container mx-auto flex p-2 justify-center items-center transform ease-in-out duration-700 transition text-center backdrop-blur bg-[#1d0e15]/10 shadow 
+        className={`transform ease-in-out duration-700 transition text-center shadow bg-[#1d0e15]/90 backdrop-blur-xl 
         md:hidden ${
           isMobileMenuOpen
-            ? "h-fit opacity-100"
-            : "h-fit opacity-0 translate-x-64 cursor-default pointer-events-none"
+            ? "h-fit opacity-100 "
+            : "h-fit opacity-0 -translate-y-64 cursor-default pointer-events-none"
         }`}
       >
-        <ul className="flex flex-col justify-center items-center gap-4">
+        <ul className="container mx-auto flex p-2 justify-center items-center flex-col gap-4">
           {navLinks.map((label, id) => (
             <li key={`nav-${label}`}>
               {" "}

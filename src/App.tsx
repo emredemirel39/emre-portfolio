@@ -58,13 +58,21 @@ function App() {
         </p>
       </FullScreenSection>
       <FullScreenSection id="3">
+        <h4 className="mb-12 text-6xl sm:text-7xl text-center">Skills</h4>
+        <SkillsSlider height={320} sliderContent={sliderContent} />
+      </FullScreenSection>
+      <FullScreenSection id="4">
         <h4 className="mb-12 text-6xl sm:text-7xl text-center border-b-2 border-blue-500 border-xl">
           Projects
         </h4>
       </FullScreenSection>
-      <FullScreenSection id="4">
-        <h4 className="mb-12 text-6xl sm:text-7xl text-center">Skills</h4>
-        <SkillsSlider height={320} sliderContent={sliderContent} />
+      <FullScreenSection id="5">
+        <h4 className="mb-12 text-6xl sm:text-7xl text-center">Contact</h4>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis
+          iure porro fugiat distinctio deserunt ea! Doloribus dolorem voluptates
+          saepe fugiat aliquid?
+        </p>
       </FullScreenSection>
     </div>
   );

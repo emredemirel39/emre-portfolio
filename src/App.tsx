@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react";
 import { navLinks, sliderContent } from "./constants";
+import bg from "./assets/images/uwp45902.webp";
 import FullScreenSection from "./components/FullScreenSection";
 import Header from "./components/Header";
 import ScrollSign from "./components/ScrollSign";
@@ -28,7 +29,7 @@ function App() {
       ref={parallaxRef}
       style={{
         scrollBehavior: "smooth",
-        backgroundImage: `url("https://images8.alphacoders.com/113/thumb-1920-1133691.jpg")`, // https://wallpapercave.com/wp/wp10533403.jpg / https://images.hdqwalls.com/wallpapers/fluid-liquid-abstract-4k-44.jpg https://wallpapercave.com/wp/wp10533403.jpg
+        backgroundImage: `url(${bg})`, // https://wallpapercave.com/wp/wp10533403.jpg / https://images.hdqwalls.com/wallpapers/fluid-liquid-abstract-4k-44.jpg https://wallpapercave.com/wp/wp10533403.jpg
         scrollSnapType: "y mandatory",
       }}
       className="App overflow-y-scroll h-screen font-serif text-gray-200 w-full snap-start bg-auto bg-repeat"
